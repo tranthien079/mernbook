@@ -15,7 +15,7 @@ export const SocketContextProvider = (({ children }) => {
 
     useEffect(() => {
         if(auth) {
-            const socket = io("http://localhost:8080", {
+            const socket = io("https://mernbook-wvl7.onrender.com", {
                 query: { userId: auth.user._id }
             });
 
